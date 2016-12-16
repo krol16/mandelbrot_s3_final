@@ -1,0 +1,17 @@
+<!Doctype html>
+<html>
+    <head><title>Mandelbrot</title></head>
+    <body>
+        <h1>Bitte geben Sie die Parameter ein </h1>
+      
+        <form name="mandelbrot" method="get" action="create">
+            Breite : <input type="text" name="breite"/> <br/>
+            Hohe : <input type="text" name="hohe"/><br/>
+			Iterationen : <input type="text" name="iterationen"/><br/>
+            <input type="submit" name="valider" value="OK"/>
+        </form>
+		{% if code == 5 %}
+			<img src="{{ path }}" class="col-lg-5" style="display:inline;"/>
+		{% endif %}
+    </body>
+</html>
